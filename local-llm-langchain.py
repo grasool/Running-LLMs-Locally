@@ -1,5 +1,7 @@
 
 # This script is testing local llms using LM Studio and langchain_openai
+# The text was copied from Dr. Andrew Ng's course on Coursera/DeepLearning.AI
+
 
 from langchain.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
