@@ -9,12 +9,10 @@ completion = client.chat.completions.create(
   model="local-model", # this field is currently unused
   messages=[
     {"role": "system", "content": "Always answer in rhymes."},
-    {"role": "user", "content": "Introduce yourself using 10 or more sentences and then guess who are you speaking to."}
+    {"role": "user", "content": "Introduce yourself and try to guess who are you speaking to."}
   ],
   temperature=0.7,
 )
 
 response = completion.choices[0].message.content
 print(response)
-
-print(type(response))
