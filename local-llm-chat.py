@@ -1,6 +1,5 @@
-#chatApplicaiton-localllm.py
 
-# Chat with an intelligent assistant in your terminal
+# Chat with an assistant in your terminal
 from openai import OpenAI
 
 # Point to the local server
