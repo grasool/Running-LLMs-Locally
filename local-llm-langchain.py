@@ -10,7 +10,7 @@ chat = ChatOpenAI(temperature=0.0, base_url="http://localhost:1234/v1", api_key=
 template_string = """Translate the text that is delimited by triple backticks \
 into a style that is {style}. text: ```{text}``` """
 
-customer_style = """American English in a calm and respectful tone """
+new_style = """American English in a calm and respectful tone """
 
 customer_email = """ Arrr, I be fuming that me blender lid flew off and splattered me kitchen walls \
 with smoothie! And to make matters worse, the warranty don't cover the cost of \
@@ -20,7 +20,7 @@ prompt_template = ChatPromptTemplate.from_template(template_string)
 
 
 customer_messages = prompt_template.format_messages(
-                    style=customer_style,
+                    style=new_style,
                     text=customer_email)
 
 print(customer_messages)
