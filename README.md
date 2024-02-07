@@ -1,4 +1,4 @@
-# Codes for Hands-On Machine Learning Lecture/Lab -1
+# How to run LLMs locally using LM Studio
 
 
 
